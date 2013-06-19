@@ -1,0 +1,17 @@
+<Files admin.php>
+      AuthUserFile /usr/local/www/apache22/conf/.htpasswd                     
+      AuthGroupFile /dev/null
+      AuthName "Compte No Parking ?"
+      AuthType Basic
+      <Limit GET POST>
+          require valid-user
+      </Limit>
+ </Files>
+
+##Options +FollowSymlinks
+##RewriteEngine on
+##RewriteBase /~perrick/opentime.fr/applications/ofr/
+##RewriteCond %{REQUEST_FILENAME} !-f
+##RewriteCond %{REQUEST_FILENAME} !-d
+##RewriteRule ^([a-z0-9]*)$ index.php?content=$1.php [L] 
+##RewriteRule ^([a-z0-9]*)-(.*)$ index.php?content=$1.php&route=$2 [L] 

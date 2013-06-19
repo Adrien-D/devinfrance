@@ -1,0 +1,13 @@
+<?php
+/*
+	application users
+	$Author: perrick $
+	$URL: svn://svn.noparking.net/var/repos/opentime/cfg/config.inc.php.dist $
+	$Revision: 5518 $
+
+	Copyright (C) No Parking 2012 - 2013
+*/
+
+$dbconfig['table_commons_users'] = "commons_users";
+
+$config['commons_version'] = "7";

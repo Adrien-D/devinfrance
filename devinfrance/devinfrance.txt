@@ -1,0 +1,11 @@
+/* EQUIPE */
+Nombre de personnes = 2
+Métiers = 1 développeur
+Ville = Lille
+Code postal = 59000
+Département = 59
+
+/* SITE */
+Dernière mise à jour = 09/03/2012
+Standards = HTML5, CSS3
+Outils = PHP, MySQL
