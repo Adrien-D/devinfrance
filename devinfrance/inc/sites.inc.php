@@ -177,8 +177,8 @@ class Devinfrance_Sites extends Collector {
 	function send() {
 		$html = "";
 		foreach ($this as $site) {
-				$html .= "<script type=\"text/javascript\">alert('il manque fichier a ".$site->name." Envoie du mail a : ".$site->email."');</script>";
-				$site->send_appologize($site->email);
+			$html .= "<script type=\"text/javascript\">alert('il manque fichier a ".$site->name." Envoie du mail a : ".$site->email."');</script>";
+			$site->send_appologize($site->email);
 		}
 		return $html;
 	}

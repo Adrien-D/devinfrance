@@ -1,6 +1,6 @@
 <?php
 /*
-	opentime
+	application commons
 	$Author: david $
 	$URL: svn://svn.noparking.net/var/repos/opentime/inc/require.inc.php $
 	$Revision: 5560 $

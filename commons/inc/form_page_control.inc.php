@@ -1,6 +1,6 @@
 <?php
 /*
-	opentime
+	application commons
 	$Author: bodart $
 	$URL: svn://svn.noparking.net/var/repos/opentime/inc/form_page_control.inc.php $
 	$Revision: 5938 $

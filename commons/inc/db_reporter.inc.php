@@ -1,6 +1,6 @@
 <?php
 /*
-	opentime
+	application commons
 	$Author: perrick $
 	$URL: svn://svn.noparking.net/var/repos/opentime/inc/db_reporter.inc.php $
 	$Revision: 4947 $

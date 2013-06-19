@@ -1,6 +1,6 @@
 <?php
 /*
-	opentime
+	application commons
 	$Author: manon.polle $
 	$URL: svn://svn.noparking.net/var/repos/opentime/inc/html_textarea.inc.php $
 	$Revision: 5452 $

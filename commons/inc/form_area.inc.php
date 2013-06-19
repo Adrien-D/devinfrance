@@ -1,6 +1,6 @@
 <?php
 /*
-	opentime
+	application commons
 	$Author: frank $
 	$URL: svn://svn.noparking.net/var/repos/opentime/inc/area.inc.php $
 	$Revision: 5513 $

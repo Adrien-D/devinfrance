@@ -177,7 +177,7 @@ class Devinfrance_Site extends Record {
 	}
 	
 	function send_appologize($to) {
-		require_once dirname(__FILE__)."/../../../opentime/inc/phpmailer/class.phpmailer.php";
+		require_once dirname(__FILE__)."/../../commons/lib/phpmailer/class.phpmailer.php";
 	
 		$mail = new PHPMailer();
 		if (!empty($GLOBALS['config']['email_smtp'])) {

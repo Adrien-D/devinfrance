@@ -1,6 +1,6 @@
 <?php
 /*
-	application ofr
+	application commons
 	$Author: maxime $
 	$URL: svn://svn.noparking.net/var/repos/projets/opentime.fr/applications/ofr/inc/content.inc.php $
 	$Revision: 572 $

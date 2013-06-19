@@ -1,6 +1,6 @@
 <?php
 /*
-	application bootinlille
+	application commons
 	$Author: perrick $
 	$URL: svn://svn.noparking.net/var/repos/opentime/inc/contact_function.inc.php $
 	$Revision: 4947 $

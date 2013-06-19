@@ -1,6 +1,6 @@
 <?php
 /*
-	opentime
+	application commons
 	$Author: perrick $
 	$URL: svn://svn.noparking.net/var/repos/opentime/inc/collector.inc.php $
 	$Revision: 5200 $

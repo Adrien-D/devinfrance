@@ -1,6 +1,6 @@
 <?php
 /*
-	opentime
+	application commons
 	$Author: maxime $
 	$URL: svn://svn.noparking.net/var/repos/opentime/tests/inc/simpletest_table_tester.php $
 	$Revision: 5145 $
