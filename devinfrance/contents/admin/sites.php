@@ -33,7 +33,7 @@ if (isset($_POST['operations'])) {
 }
 
 $sites = new Devinfrance_Sites();
-$sites->set_limit($GLOBALS['param']['nb_records'], isset($_GET['init']) ? (int)$_GET['init'] : 0);
+$sites->set_limit($GLOBALS['param']['commons_app_nb_records'], isset($_GET['init']) ? (int)$_GET['init'] : 0);
 $sites->calc_found_rows(true);
 $sites->set_order("date_update", "DESC");
 $sites->select();

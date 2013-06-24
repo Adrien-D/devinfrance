@@ -24,7 +24,7 @@ if (isset($_POST['operations'])) {
 }
 
 $propositions = new Devinfrance_Propositions();
-$propositions->set_limit($GLOBALS['param']['nb_records'], isset($_GET['init']) ? (int)$_GET['init'] : 0);
+$propositions->set_limit($GLOBALS['param']['commons_app_nb_records'], isset($_GET['init']) ? (int)$_GET['init'] : 0);
 $propositions->calc_found_rows(true);
 $propositions->set_order("date_update", "DESC");
 $propositions->select();

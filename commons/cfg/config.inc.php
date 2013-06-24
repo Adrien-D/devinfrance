@@ -27,3 +27,7 @@ $dbconfig['user'] = "root";		// login de l'application pour accéder à la base 
 $dbconfig['pass'] = "";		// mot de passe de l'application pour accéder à la base de données
 $dbconfig['name'] = "devinfrance";		// nom de la base de données
 $dbconfig['new'] = "0";		// forcer la création d'une nouvelle connexion
+
+$dbconfig['table_commons_users'] = "commons_users";		// création de la table commons users
+
+$config['commons_version'] = "7";

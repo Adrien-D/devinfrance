@@ -23,7 +23,7 @@ if (isset($_POST['operations'])) {
 }
 
 $authors = new Devinfrance_Authors();
-$authors->set_limit($GLOBALS['param']['nb_records'], isset($_GET['init']) ? (int)$_GET['init'] : 0);
+$authors->set_limit($GLOBALS['param']['commons_app_nb_records'], isset($_GET['init']) ? (int)$_GET['init'] : 0);
 $authors->calc_found_rows(true);
 $authors->set_order("name", "ASC");
 $authors->select();

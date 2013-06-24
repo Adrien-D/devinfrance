@@ -21,16 +21,16 @@ class Form_Page_Control {
 		$html = "";
 
 		if ($this->total) {
-			if (!isset( $GLOBALS['param']['nb_records'])) {
-				trigger_error("\$GLOBALS['param']['nb_records']) is undefined", E_USER_ERROR);
-			} else if ($GLOBALS['param']['nb_records'] <= 0) {
-				trigger_error("\$GLOBALS['param']['nb_records']) must be greater than 0", E_USER_ERROR);
+			if (!isset( $GLOBALS['param']['commons_app_nb_records'])) {
+				trigger_error("\$GLOBALS['param']['commons_app_nb_records']) is undefined", E_USER_ERROR);
+			} else if ($GLOBALS['param']['commons_app_nb_records'] <= 0) {
+				trigger_error("\$GLOBALS['param']['commons_app_nb_records']) must be greater than 0", E_USER_ERROR);
 			} else {
-				$nbpages = ceil($this->total / $GLOBALS['param']['nb_records']);
+				$nbpages = ceil($this->total / $GLOBALS['param']['commons_app_nb_records']);
 
 				$html = "<ul class=\"pager clearfix\"><li class=\"page\">".$GLOBALS['txt_page']."</li>";
 				for ($i = 1; $i <= $nbpages; $i++) {
-					$current_init = ($i-1) * $GLOBALS['param']['nb_records'];
+					$current_init = ($i-1) * $GLOBALS['param']['commons_app_nb_records'];
 
 					if (is_numeric($init) and $init == $current_init) {
 						$html .= "<li class=\"currentpage\">".$i."</li>";

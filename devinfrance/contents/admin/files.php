@@ -22,7 +22,7 @@ if (isset($_POST['operations'])) {
 }
 
 $files = new Devinfrance_Files();
-$files->set_limit($GLOBALS['param']['nb_records'], isset($_GET['init']) ? (int)$_GET['init'] : 0);
+$files->set_limit($GLOBALS['param']['commons_app_nb_records'], isset($_GET['init']) ? (int)$_GET['init'] : 0);
 $files->calc_found_rows(true);
 $files->set_order("date_insert", "DESC");
 $files->select();

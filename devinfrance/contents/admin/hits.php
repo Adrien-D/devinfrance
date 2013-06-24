@@ -10,7 +10,7 @@
 
 $html = "<div class=\"Title\">".__("Hits")."</div>";
 $hits = new Devinfrance_Hits();
-$hits->set_limit($GLOBALS['param']['nb_records'], isset($_GET['init']) ? (int)$_GET['init'] : 0);
+$hits->set_limit($GLOBALS['param']['commons_app_nb_records'], isset($_GET['init']) ? (int)$_GET['init'] : 0);
 $hits->calc_found_rows(true);
 $hits->noparking = $GLOBALS['param']['devinfrance_noparking_ip'];
 $hits->set_order("date_update", "DESC");

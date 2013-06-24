@@ -22,7 +22,7 @@ if (isset($_POST['operations'])) {
 }
 
 $blocks = new Devinfrance_Blocks();
-$blocks->set_limit($GLOBALS['param']['nb_records'], isset($_GET['init']) ? (int)$_GET['init'] : 0);
+$blocks->set_limit($GLOBALS['param']['commons_app_nb_records'], isset($_GET['init']) ? (int)$_GET['init'] : 0);
 $blocks->calc_found_rows(true);
 $blocks->set_order("date_update", "DESC");
 $blocks->select();
