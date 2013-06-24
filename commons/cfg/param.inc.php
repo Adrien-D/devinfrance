@@ -29,4 +29,4 @@ $param['commons_web_urlrewriting'] = "0";
 
 $param['layout_multiplestatus'] = "0";
 
-$param['email_wrap'] = "50";
+$param['commons_app_email_wrap'] = "50";
