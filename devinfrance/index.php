@@ -11,7 +11,7 @@
 require dirname(__FILE__)."/../commons/inc/require.inc.php";
 
 if (function_exists("date_default_timezone_set")) {
-	date_default_timezone_set($GLOBALS['param']['locale_timezone']);
+	date_default_timezone_set($GLOBALS['param']['commons_app_locale_timezone']);
 }
 
 session_start();
