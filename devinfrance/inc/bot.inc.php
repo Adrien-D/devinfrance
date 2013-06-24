@@ -352,7 +352,7 @@ HTML
 	function install_database() {
 		$queries = array();
 		$db = new db();
-		require dirname(__FILE__)."/../../../opentime/sql/content.sql.php";
+		require dirname(__FILE__)."/../../commons/sql/content.sql.php";
 		require dirname(__FILE__)."/../sql/content.sql.php";
 		$this->db->initialize($queries);
 		$this->install_blocks();
@@ -360,37 +360,7 @@ HTML
 	}
 	
 	function uninstall_database() {
-		require dirname(__FILE__)."/../../../opentime/sql/delete.sql.php";
+		require dirname(__FILE__)."/../../commons/sql/delete.sql.php";
 		return true;
-	}
-	
-	function update() {
-		$this->update_svn();
-		$this->update_opentime();
-		$this->update_application();
-		return true;
-	}
-	
-	function update_svn() {
-		return exec("svn up ".realpath(dirname(__FILE__)."/../../../"));
-	}
-	
-	function update_opentime() {
-		$db = new db();
-		require dirname(__FILE__)."/../../../opentime/sql/update.sql.php";
-		return true;
-	}
-	
-	function update_application() {
-		$update = new Devinfrance_Update();
-		$current = $update->current() + 1;
-		$last = $update->last();
-
-		for ($i = $current; $i <= $last; $i++) {
-			if (method_exists($update, "to_".$i)) {
-				$update->{"to_".$i}();
-				$update->config("version", $i);
-			}
-		}
 	}
 }
