@@ -169,7 +169,7 @@ class Devinfrance_Site extends Record {
 		$mail->From = $this->email;
 		$mail->FromName = $this->name;
 		$mail->AddAddress($to);
-		$mail->WordWrap = $GLOBALS['param']['email_wrap'];
+		$mail->WordWrap = $GLOBALS['param']['commons_app_email_wrap'];
 		$mail->IsHTML(false);
 		$mail->Subject = __("Dev in France site | %s", array(date("d/m/Y H:i")));
 		$mail->Body = $this->body();
