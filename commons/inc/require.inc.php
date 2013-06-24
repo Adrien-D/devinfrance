@@ -79,5 +79,5 @@ if (strpos($_SERVER['SCRIPT_FILENAME'], "setup.php") === false) {
 }
 
 if (function_exists("date_default_timezone_set")) {
-	date_default_timezone_set($GLOBALS['param']['locale_timezone']);
+	date_default_timezone_set($GLOBALS['param']['commons_app_locale_timezone']);
 }

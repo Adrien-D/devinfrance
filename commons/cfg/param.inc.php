@@ -11,6 +11,7 @@
 $param['commons_app_name'] = "Commons App";
 $param['commons_app_email'] = "contact@noparking.net";
 $param['commons_app_nb_records'] = "50";
+$param['commons_app_locale_timezone'] = "Europe/Paris";
 
 $param['commons_password_salt'] = "faDER68sNuGs+rip98ern~leYscARe99slAM*";
 $param['commons_password_loop'] = "200";
