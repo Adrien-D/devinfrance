@@ -25,3 +25,5 @@ $param['commons_web_analytics'] = "";
 $param['commons_web_minifycss'] = "0";
 $param['commons_web_minifyjs'] = "0";
 $param['commons_web_urlrewriting'] = "0";
+
+$param['layout_multiplestatus'] = "0";
